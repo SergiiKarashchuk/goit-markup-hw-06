@@ -661,12 +661,15 @@ h2 {
   margin-bottom: 20px;
 }
 
+.email-form-group {
+  display: flex;
+}
+
 .email-form-field {
-  display: inline-block;
+  display: block;
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
   background-color: transparent;
   outline-color: tr;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -698,6 +701,7 @@ h2 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--accent-color);
+  margin-left: 12px;
 
   display: inline-flex;
   text-align: center;
@@ -746,6 +750,7 @@ h2 {
   position: absolute;
   justify-content: center;
   align-items: center;
+  padding: 40px;
 
   top: 50%;
   left: 50%;
@@ -754,7 +759,6 @@ h2 {
   min-height: 581px;
   border-radius: 4px;
   background-color: #ffffff;
-  padding: 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -791,8 +795,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 448px;
-  height: 342px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .register-form-field {
@@ -811,19 +814,18 @@ h2 {
 .register-form-items {
   display: block;
 
-  padding-top: 10px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primery-text-color);
 }
 
+
 .register-form-title {
   display: block;
 
-  padding-top: 40px;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -843,6 +845,7 @@ h2 {
 
 .register-form-field-for-icon {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .register-form-field:focus + .form-icon {
@@ -862,8 +865,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -878,6 +880,7 @@ h2 {
 }
 
 .register-form-textarea {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -956,7 +959,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 
-  transition-property: transform;
+  transition-property: transform, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 }
@@ -964,6 +967,7 @@ h2 {
 .btn-form-submit:hover {
   cursor: pointer;
   transform: scale(1.05);
+  background-color: #188CE8;
 }
 
 /* Модальне вікно end*/
